@@ -1,0 +1,54 @@
+
+In the current project, things that are going to be implemented are checking the overflow of sewers, concentration of poisonous gases (methane) and
+blockages in the underground pipes. The data regarding these parameters is
+to be sensed and processed. So for this we are using following:
+4.1.1 ESP32
+In our project will use ESP module for transfer of data and communication
+between the cloud and the model system.The ESP8266 Wi-Fi module is
+self-compartment SOC with in focused TCP/IP convention stack that can
+give any microcontroller admittance to your Wi-Fi network. Each ESP8266
+module comes pre-programmed with an AT commands set firmware. The
+ESP8266 module is an extremely cost effective bold with a hug and ever
+growing, community. So we will be using ESP 32 which is a 40 pin micro
+controller that works at low voltage. It has a dual core processor. This
+module has dual-mode bluetooth and wifi embedded on it. SP32 is made
+and created by Espressif Systems, a Shanghai-based Chinese organization,
+and is produced by TSMC utilizing their 40 nm process.It is a replacement
+to the ESP8266 microcontroller. ESP32 can aslo be used as a microcontroller
+and develop a design. It is very efficient and easy to use. It can be used both
+for commercial purpose and also for industrial purpose.
+
+Arduino Uno is a microcontroller used to running all the sensors. It is the
+board that contains sets of digital and analog input output pins that helps
+in connecting many other sensors and modules.
+Figure 4.2: Arduino UNO
+
+An ultrasonic sound sensor is a device that measures distance of the target.
+This sensor converts the electric signals into ultrasonic sound waves and the
+transmitter present in the sensor transmits them. When they hit the target,
+waves reflect back and reach the receiver. Based on the time of reception
+of ultrasonic signals, distance of the target from the sensor is found out.An
+ultrasonic sound sensor is a device that measures distance of the target.
+HCSR04 ultrasonic sensor consists of a transmitter, a receiver and a control
+unit. In this module HCSR04, trigger pulse for 10sis provided to the TRIG
+pin, so that the transmitter generates ultrasonic sound waves of frequency
+40 kHz.
+Pin Description:
+VCC: The supply of 5V is given to this pin.
+TRIGGER: This is an input pin where 10s pulse is given to this pin.
+ECHO: This pin is output pin which remains high until the echo sound
+wave is received.
+GROUND: This is connected to 0V.
+
+
+MQ-135 gas sensor is used to detect the concentration levels of methane and
+natural gas in ppm. This sensor has a layer of SnO2. SnO2 is sensitive to
+methane gas. It increases its conductivity when it comes in contact with
+these harmful gases. So, the output voltage also increases. Thus this value
+is used to calibrate the methane level.
+Pin Description:
+VCC: A supply of 5V is given through this pin
+AOUT: This is an ouput pin. This gives output analog voltage level
+depending on the concentration of methane
+DOUT: This is a digital output pin.
+GND: It is connected to ground
